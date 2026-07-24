@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transition Global Enterprise</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Transition Global Enterprise</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Transition Global Enterprise</h2>
+            <p>Your trusted partner in global business solutions.</p>
+            <!-- Added image below welcome text -->
+            <img src="images/img_07.jpg" alt="Corporate Global Business" class="hero-image" />
+            <p>At Transition Global Enterprise, we deliver innovative solutions to drive growth and
+                success for businesses worldwide. Our expertise spans [DECORP], empowering clients
+                to thrive in a dynamic global market.
+            </p>
+
+        </section>
+
+        <section class="why-choose-us">
+            <h3>Why Choose Us</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>Expertise</h4>
+                    <p>Over 20 years of industry experience across multiple sectors.</p>
+                </div>
+                <div class="feature">
+                    <h4>Global Reach</h4>
+                    <p>Operating in more than 30 countries worldwide.</p>
+                </div>
+                <div class="feature">
+                    <h4>Customer Focus</h4>
+                    <p>Dedicated to delivering tailored solutions and exceptional service.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added Gallery Section -->
+        <section class="gallery">
+            <h3>Gallery</h3>
+            <div class="gallery-grid">
+                <img src="images/img_11.jpg" alt="Gallery Image 1" />
+                <img src="images/img_06.jpg" alt="Gallery Image 2" />
+                <img src="images/comp_06.jpg" alt="Gallery Image 3" />
+                <img src="images/img_00.jpg" alt="Gallery Image 4" />
+                <img src="images/Global-Business.jpg" alt="Gallery Image 5" />
+                <img src="images/comp_01.jpg" alt="Gallery Image 6" />
+                <img src="images/comp_02.jpg" alt="Gallery Image 7" />
+                <img src="images/team_01.jpg" alt="Gallery Image 8" />
+                <img src="images/img_02.jpg" alt="Gallery Image 9" />
+            </div>
+        </section>
+
+<div id="popupNotice" class="popup-notice">
+    <div class="popup-header">
+        <span id="popupTitle">Notification</span>
+        <button class="popup-close" onclick="closePopup()">×</button>
+    </div>
+    <div class="popup-body" id="popupMessage">
+        Welcome to our website.
+    </div>
+</div>
+
+<script>
+function showPopup(title, message) {
+    document.getElementById("popupTitle").textContent = title;
+    document.getElementById("popupMessage").textContent = message;
+    document.getElementById("popupNotice").classList.add("show");
+
+    // Auto close after 6 seconds
+    setTimeout(closePopup, 6000);
+}
+
+function closePopup() {
+    document.getElementById("popupNotice").classList.remove("show");
+}
+
+/* Auto show on page load (optional) */
+window.addEventListener("load", function () {
+    showPopup(
+        "Welcome To Transition Global Enterprise",
+        "Your trusted partner in global business solutions."
+    );
+});
+</script>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>Transition Global Enterprise</h3>
+      <p>
+        Building modern, responsive, and user-friendly <br>
+        web solutions.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: dennie****4@gmail.com</p>
+      <p>Phone: +234 903 837 0953</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<style>
+.site-footer {
+  background-color:#003366;
+  color: #eee;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #66b2ff;
+}
+
+</style>
+    <hr>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Transition Global Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
